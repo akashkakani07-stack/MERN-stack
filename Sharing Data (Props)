@@ -1,0 +1,9 @@
+function Child({ msg }) {
+  return <h1>{msg}</h1>;
+}
+
+function App() {
+  return <Child msg="Hello from Parent" />;
+}
+
+export default App;
