@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="output"></h2>
+
+<script>
+    // document
+    document.title = "JS Objects";
+
+    // window
+    window.alert("Welcome!");
+
+    // math
+    let num = Math.sqrt(25);
+
+    // string
+    let text = "hello";
+    let upper = text.toUpperCase();
+
+    document.getElementById("output").innerHTML =
+        "Square root: " + num + "<br>Uppercase: " + upper;
+</script>
+
+</body>
+</html>
