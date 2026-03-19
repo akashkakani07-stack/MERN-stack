@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div p { color: blue; }        /* Descendant */
+div > p { color: red; }       /* Child */
+h1 + p { color: green; }      /* Adjacent */
+h1 ~ p { background: yellow;} /* General sibling */
+</style>
+</head>
+<body>
+
+<div>
+    <p>Inside div</p>
+</div>
+
+<h1>Heading</h1>
+<p>Adjacent paragraph</p>
+<p>Another paragraph</p>
+
+</body>
+</html>
