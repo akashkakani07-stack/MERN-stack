@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Example</title>
+    <script src="script.js"></script> <!-- External -->
+    <script>
+        function internalJS() {
+            alert("Internal JavaScript");
+        }
+    </script>
+</head>
+<body>
+
+<button onclick="internalJS()">Internal JS</button>
+<button onclick="externalJS()">External JS</button>
+
+</body>
+</html>
