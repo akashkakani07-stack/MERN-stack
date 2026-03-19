@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="demo"></h2>
+
+<script>
+    document.getElementById("demo").innerHTML = "Using innerHTML";
+
+    document.write("Using document.write<br>");
+
+    console.log("Using console.log");
+
+    alert("Using alert");
+</script>
+
+</body>
+</html>
