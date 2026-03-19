@@ -1,0 +1,23 @@
+const express = require('express');
+const app = express();
+
+app.use(express.json());
+
+// GET
+app.get('/data', (req, res) => {
+    res.send("Data retrieved");
+});
+
+// POST
+app.post('/data', (req, res) => {
+    res.send("Data received: " + JSON.stringify(req.body));
+});
+
+// DELETE
+app.delete('/data/:id', (req, res) => {
+    res.send("Deleted ID: " + req.params.id);
+});
+
+app.listen(3000, () => {
+    console.log("Server running on port 3000");
+});
