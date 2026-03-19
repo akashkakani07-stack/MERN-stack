@@ -1,0 +1,24 @@
+// Function with parameter types and return type
+function add(a: number, b: number): number {
+    return a + b;
+}
+
+// Arrow function
+const multiply = (x: number, y: number): number => {
+    return x * y;
+};
+
+// Optional parameter
+function greet(name: string, age?: number): string {
+    return "Hello " + name + (age ? " Age: " + age : "");
+}
+
+// Default parameter
+function power(base: number, exp: number = 2): number {
+    return base ** exp;
+}
+
+console.log(add(5, 3));
+console.log(multiply(4, 2));
+console.log(greet("Akash"));
+console.log(power(5));
