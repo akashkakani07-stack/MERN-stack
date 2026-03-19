@@ -1,0 +1,25 @@
+const express = require('express');
+const session = require('express-session');
+const cookieParser = require('cookie-parser');
+
+const app = express();
+
+app.use(cookieParser());
+app.use(session({
+    secret: 'secret-key',
+    resave: false,
+    saveUninitialized: true
+}));
+
+app.get('/', (req, res) => {
+    res.cookie('user', 'Akash');
+    req.session.name = "Akash";
+    res.send("Cookie & Session Set");
+});
+
+app.get('/get', (req, res) => {
+    res.send("Cookie: " + req.cookies.user + 
+             " Session: " + req.session.name);
+});
+
+app.listen(3000);
