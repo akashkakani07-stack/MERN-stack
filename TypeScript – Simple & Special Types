@@ -1,0 +1,32 @@
+// Simple Types
+let name: string = "Akash";
+let age: number = 20;
+let isStudent: boolean = true;
+
+// Array
+let marks: number[] = [90, 85, 88];
+
+// Tuple
+let person: [string, number] = ["Akash", 20];
+
+// Enum
+enum Color { Red, Green, Blue }
+let c: Color = Color.Green;
+
+// Any
+let data: any = "Hello";
+data = 123;
+
+// Unknown
+let value: unknown = "Test";
+
+// Void
+function greet(): void {
+    console.log("Welcome");
+}
+
+// Null & Undefined
+let n: null = null;
+let u: undefined = undefined;
+
+console.log(name, age, isStudent, marks, person, c, data, value, n, u);
