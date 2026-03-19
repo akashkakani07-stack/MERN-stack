@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+function fibonacci(n) {
+    let a = 0, b = 1, temp;
+    document.write(a + " " + b + " ");
+
+    for (let i = 2; i < n; i++) {
+        temp = a + b;
+        document.write(temp + " ");
+        a = b;
+        b = temp;
+    }
+}
+
+let num = parseInt(prompt("Enter number"));
+fibonacci(num);
+</script>
+
+</body>
+</html>
