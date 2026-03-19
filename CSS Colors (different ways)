@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Colors</title>
+</head>
+<body>
+
+<h2 style="color:red;">Color Name</h2>
+
+<h2 style="color:#00FF00;">Hex Value</h2>
+
+<h2 style="color:rgb(0,0,255);">RGB Value</h2>
+
+<h2 style="color:hsl(300,100%,50%);">HSL Value</h2>
+
+</body>
+</html>
