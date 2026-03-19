@@ -1,0 +1,20 @@
+import React, { useState } from "react";
+
+function Child(props) {
+  return <h2>Name: {props.name}</h2>;
+}
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <Child name="Akash" />
+      <button onClick={() => setCount(count + 1)}>
+        Count: {count}
+      </button>
+    </div>
+  );
+}
+
+export default App;
