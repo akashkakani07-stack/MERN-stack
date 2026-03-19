@@ -1,0 +1,5 @@
+1. Go to https://www.mongodb.com/atlas
+2. Create account
+3. Create cluster
+4. Get connection string
+5. Replace in mongoose.connect()
